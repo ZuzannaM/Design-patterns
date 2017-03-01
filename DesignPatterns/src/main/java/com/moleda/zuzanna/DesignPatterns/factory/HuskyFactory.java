@@ -15,7 +15,10 @@ public class HuskyFactory implements DogAbstaractfactory{
 
 	@Override
 	public Dog getDog() {
-		return new Husky(name, age);
+		return new Husky.HuskyBuilder(name, age)
+				.setColor("black-white")
+				.setWeight(5)
+				.build();
 	}
 	
 	
