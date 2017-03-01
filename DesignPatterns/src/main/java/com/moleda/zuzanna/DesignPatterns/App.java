@@ -2,21 +2,19 @@ package com.moleda.zuzanna.DesignPatterns;
 
 public class App {
 	
-	// SINGLETON pattern
-	
-	public static SingletonObject tab[] = new SingletonObject[4];
+	// FACTORY pattern
+	public static Dog dogs[] = new Dog[3];
 	
 	public static void main(String[] args) {
 		
-		System.out.println("Testing a singleton pattern...");
+		System.out.println("Testing a factory pattern...");
 		
-		tab[0] = SingletonObject.getSingletonObject();
-		tab[1] = SingletonObject.getSingletonObject();
-		tab[2] = SingletonObject.getSingletonObject();
-		tab[3] = SingletonObject.getSingletonObject();
+		dogs[0] = DogFactory.getDogFactory().getDog("husky", "Leo", 2);
+		dogs[1] = DogFactory.getDogFactory().getDog("labrador", "Max", 1);
+		dogs[2] = DogFactory.getDogFactory().getDog("beagle", "Rex", 3);
 		
-		for(SingletonObject s : tab) {
-			System.out.println(s.toString());
+		for(Dog dog : dogs) {
+			System.out.println(dog);
 		}
 		
 	}
