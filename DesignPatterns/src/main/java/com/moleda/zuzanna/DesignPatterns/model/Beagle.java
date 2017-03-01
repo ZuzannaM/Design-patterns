@@ -1,12 +1,12 @@
-package com.moleda.zuzanna.DesignPatterns;
+package com.moleda.zuzanna.DesignPatterns.model;
 
-public class Husky extends Dog {
+public class Beagle extends Dog {
 
-	private static String breed = "husky";
+	private static String breed = "beagle";
 	private String name;
 	private Integer age;
 	
-	public Husky(String name, Integer age){
+	public Beagle(String name, Integer age){
 		this.name = name;
 		this.age = age;
 	}
@@ -29,7 +29,7 @@ public class Husky extends Dog {
 	
 	@Override
 	public String toString() {
-		return "Husky [breed=" + breed + ", name=" + name + ", age=" + age + "]";
+		return "Beagle [breed=" + breed + ", name=" + name + ", age=" + age + "]";
 	}
-	
+
 }

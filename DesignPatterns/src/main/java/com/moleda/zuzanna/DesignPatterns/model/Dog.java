@@ -1,4 +1,4 @@
-package com.moleda.zuzanna.DesignPatterns;
+package com.moleda.zuzanna.DesignPatterns.model;
 
 public abstract class Dog {
 
